@@ -1,11 +1,12 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import { App } from './App.tsx'
+import { App } from './App'
 import './index.css'
 import { BrowserRouter } from 'react-router-dom'
 import { WagmiProvider } from 'wagmi'
-import { config } from './configs/web3.config.ts'
+import { config } from './configs/web3.config.js'
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
+window.Buffer = window.Buffer || require('buffer').Buffer
 
 const queryClient = new QueryClient()
 

@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/no-explicit-any */
 import { createClient } from 'viem'
 import { http, createConfig } from 'wagmi'
 import { berachainTestnet, bscTestnet } from 'wagmi/chains'
